@@ -1,0 +1,40 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    background-color: aqua;
+    
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+    flex: 3;
+    margin: 10px;
+}
+
+.monitor {
+    flex: 1;
+    background-color: bisque;
+    margin: 10px;
+}
+
+
+.row {
+    flex: 1;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    flex: 1;
+    background-color: rgb(118, 255, 170);
+    
+}
