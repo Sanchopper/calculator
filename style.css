@@ -3,7 +3,8 @@
     flex-direction: column;
     height: 500px;
     width: 400px;
-    background-color: aqua;
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
     
 }
 
@@ -17,13 +18,14 @@ body {
     display: flex;
     gap: 5px;
     flex: 3;
-    margin: 10px;
+    margin: 15px;
 }
 
 .monitor {
     flex: 1;
-    background-color: bisque;
-    margin: 10px;
+    background-color: rgb(207, 207, 207);
+    margin: 15px;
+    border-radius: 5px;
 }
 
 
@@ -35,6 +37,8 @@ body {
 }
 .btn {
     flex: 1;
-    background-color: rgb(118, 255, 170);
+    background-color: rgb(255, 252, 63);
+    font-size: 23px;
+    border-radius: 10%;
     
 }
