@@ -1,5 +1,5 @@
 let currentNumber = ''
-let firstNumber
+let firstNumber = ''
 let OP
 let monitor = document.querySelector('.monitor')
 
@@ -17,15 +17,22 @@ digits.forEach((button) => {
         firstNumber = currentNumber
         currentNumber = ''
         OP = button.id
+        monitor.textContent = button.id
     })
  })
 
- const calculate = document.querySelector('.=')
- calculate.addEventListener(('click', ()=> {
-    let firstNumber = num(str)
-    let currentNumber = num(str)
-    monitor.textContent = calculation(firstNumber, currentNumber, OP)
- }))
+ const calculate = document.querySelector('.calculate')
+ calculate.addEventListener('click', ()=> {
+    let firstNumberFloat = Number(firstNumber)
+    let currentNumberFloat = Number(currentNumber)
+    monitor.textContent = calculation(firstNumberFloat, currentNumberFloat, OP)
+
+ })
+
+const clear = document.querySelector('.clear')
+clear.addEventListener('click', ()=> {
+    clearCalculator()
+})
 
  function calculation(a, b, op) {
     if (op === '/') {
@@ -38,4 +45,11 @@ digits.forEach((button) => {
         return a - b
     }
 
+ }
+
+ function clearCalculator(){
+    firstNumber = null;
+    currentNumber = '';
+    OP = null;
+    monitor.textContent = '0';
  }
