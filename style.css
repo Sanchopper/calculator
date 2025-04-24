@@ -21,12 +21,17 @@ body {
     margin: 15px;
 }
 
+.btn:hover {
+    background-color: rgb(255, 253, 119);
+}
+
 .monitor {
     flex: 1;
     background-color: rgb(207, 207, 207);
     margin: 15px;
     border-radius: 5px;
     font-size: 60px;
+    text-align: right;
 }
 
 
